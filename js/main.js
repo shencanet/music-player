@@ -17,6 +17,7 @@ const songList = [
         cover: "3.jpeg"
     },
 ]
+//
 
 // Capturar elementos del DOM para trabajar con JS
 const songs = document.getElementById("songs")
