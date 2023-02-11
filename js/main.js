@@ -20,7 +20,7 @@ const songList = [
 //
 
 // Capturar elementos del DOM para trabajar con JS
-const songs = document.getElementById("songs")
+const songs = document.getElementById("songs");
 const audio = document.getElementById("audio")
 const cover = document.getElementById("cover")
 const title = document.getElementById("title")
@@ -29,3 +29,14 @@ const prev = document.getElementById("prev")
 const next = document.getElementById("next")
 const progress = document.getElementById("progress")
 const progressContainer = document.getElementById("progress-container")
+
+//cargar canciones y mostra listado
+
+function loadSongs() {
+ songList.forEach(song => {
+    
+ })
+}
+
+//GO
+loadSongs()
