@@ -1,4 +1,3 @@
-// Song data
 const songList = [
     {
         title: "Acoustic Breeze",
@@ -17,26 +16,23 @@ const songList = [
         cover: "3.jpeg"
     },
 ]
-//
+typeof(songList)
 
-// Capturar elementos del DOM para trabajar con JS
 const songs = document.getElementById("songs");
-const audio = document.getElementById("audio")
-const cover = document.getElementById("cover")
-const title = document.getElementById("title")
-const play = document.getElementById("play")
-const prev = document.getElementById("prev")
-const next = document.getElementById("next")
-const progress = document.getElementById("progress")
-const progressContainer = document.getElementById("progress-container")
 
-//cargar canciones y mostra listado
+//const audio = document.getElementById("audio")
+//const cover = document.getElementById("cover")
+//const title = document.getElementById("title")
+//const play = document.getElementById("play")
+//const prev = document.getElementById("prev")
+//const next = document.getElementById("next")
+//const progress = document.getElementById("progress")
+//const progressContainer = document.getElementById("progress-container")
 
-function loadSongs() {
- songList.forEach(song => {
-    
- })
-}
+function loadmusic() {
 
-//GO
-loadSongs()
+ }
+
+ loadmusic()
+
+

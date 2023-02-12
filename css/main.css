@@ -71,19 +71,24 @@ body {
     color: white;
 }
 
+
 /* Songs */
-
-.song{
+.songs {
     margin: 0;
-    padding:0;
+    padding: 0;
     list-style: none;
-
 }
-.song li {
+
+.songs li {
     margin-bottom: 1rem;
 }
 
-.song a{
-    color: white;
+.songs a {
+    color: lightgray;
     text-decoration: none;
+}
+
+.songs a.active {
+    color: white;
+    font-weight: bold;
 }
