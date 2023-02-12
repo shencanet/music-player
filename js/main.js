@@ -17,7 +17,7 @@ const songList = [
     },
 ]
 typeof(songList)
-
+//capturar elementos DOM
 const songs = document.getElementById("songs");
 
 //const audio = document.getElementById("audio")
@@ -29,10 +29,20 @@ const songs = document.getElementById("songs");
 //const progress = document.getElementById("progress")
 //const progressContainer = document.getElementById("progress-container")
 
-function loadmusic() {
 
- }
+//CARGART CANCIONES
+function loadSongs() {
+    songList.forEach(song => {
+        const li = document.createElement("li")
+        const link = document.createElement("a")
+        link.textContent = song.title
+        li.appendChild(link)
+        songs.appendChild(li)
 
- loadmusic()
+    })
+}
+    
+//GO¡¡¡¡¡
+ loadSongs()
 
 
