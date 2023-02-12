@@ -1,51 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Music Player || Santi Dionis</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
-    />
-    <link rel="stylesheet" href="./css/main.css" />
-    <script src="./js/main.js" defer></script>
-  </head>
-  <body>
-    <!--Player -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" defer></script>
+</head> 
+
+<body>
+    <!-- Player -->
     <main class="player">
-      <!--Title -->
-      <h1 class="title" id="title"></h1>
-      <!--Cover -->
 
-      <img src="" alt="" class="cover" id="cover"/>
-       <!--Audio Html Media element-->
-        <audio src="" id="audio" ></audio>
-        <!--Progress Bar -->
-      
-      <div class="progress-Container">
-        <section class="progress"></section>
-      </div>
-      <!--Controls -->
-      <section class="controls">
-        <button class="prev">
-          <i class="fas fa-backward"></i>
-        </button>
-        <button class="play">
-          <i class="fas fa-play"></i>
-        </button>
-        <button class="next">
-          <i class="fas fa-forward"></i>
-        </button>
-      </section>
+        <!-- Title -->
+        <h1 class="title" id="title"></h1>
 
-      <!--Song List -->
-      <ul class="songs" id="songs">
-              <!--<li><a href="">song 1</a></li>
-                <li><a class="active" href="">song 2</a></li>
-                <li><a href="">song 3</a></li>-->
-      </ul>
+        <!-- Cover -->
+        <img src="" alt="" class="cover" id="cover">
+
+        <!-- Audio HTML Media elememt -->
+        <audio src="" id="audio"></audio>
+
+        <!-- Progress bar -->
+        <div id="progress-container" class="progress-container">
+            <section id="progress" class="progress"></section>
+        </div>
+
+        <!-- Controls -->
+        <section class="controls">
+            <button class="prev">
+                <i id="prev" class="fas fa-backward"></i>
+            </button>
+            <button class="play">
+                <i id="play" class="fas fa-play"></i>
+            </button>
+            <button class="next">
+                <i id="next" class="fas fa-forward"></i>
+            </button>
+        </section>
+
+        <!-- Song list -->
+        <ul class="songs" id="songs">
+            <!-- <li><a href="#">Song 1</a></li>
+            <li><a class="active" href="#">Song 2</a></li>
+            <li><a href="#">Song 3</a></li> -->
+        </ul>
     </main>
-  </body>
+</body>
+
 </html>
