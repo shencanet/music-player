@@ -2,18 +2,18 @@ const songList = [
     {
         title: "Acoustic Breeze",
         file: "acousticbreeze.mp3",
-        cover: "1.jpeg"
+        cover: "1.jpg"
 
     },
     {
         title: "A New Beginning",
         file: "anewbeginning.mp3",
-        cover: "2.jpeg"
+        cover: "2.jpg"
     },
     {
         title: "Creative Minds",
         file: "creativeminds.mp3",
-        cover: "3.jpeg"
+        cover: "3.jpg"
     },
 ]
 typeof(songList)
@@ -21,7 +21,7 @@ typeof(songList)
 const songs = document.getElementById("songs");
 
 const audio = document.getElementById("audio")
-//const cover = document.getElementById("cover")
+const cover = document.getElementById("cover")
 //const title = document.getElementById("title")
 //const play = document.getElementById("play")
 //const prev = document.getElementById("prev")
@@ -56,7 +56,10 @@ function loadSongs() {
 
 function loadSong(songIndex){
     audio.src = "./audio/" +  songList[songIndex].file
+    
     audio.play()
+
+    cover.src = "./img/" +  songList[songIndex].cover
 }
 //GO¡¡¡¡¡
  loadSongs()
