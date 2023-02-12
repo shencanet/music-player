@@ -20,7 +20,7 @@ typeof(songList)
 //capturar elementos DOM
 const songs = document.getElementById("songs");
 
-//const audio = document.getElementById("audio")
+const audio = document.getElementById("audio")
 //const cover = document.getElementById("cover")
 //const title = document.getElementById("title")
 //const play = document.getElementById("play")
@@ -32,16 +32,32 @@ const songs = document.getElementById("songs");
 
 //CARGART CANCIONES
 function loadSongs() {
-    songList.forEach(song => {
+    songList.forEach((song, index) => {
+        //console.log(index)
+        //CREAR LI
         const li = document.createElement("li")
+        //CREAR A
         const link = document.createElement("a")
+        // HIDRATAR LI
         link.textContent = song.title
+        link.href = '#'
+        //escuchar clicks
+        link.addEventListener("click", () => loadSong(index))
+        //añadir a li
         li.appendChild(link)
+
+        //AÑADIR A LI A UL
         songs.appendChild(li)
 
     })
 }
     
+//cargar cancion seleccionada
+
+function loadSong(songIndex){
+    audio.src = "./audio/" +  songList[songIndex].file
+    audio.play()
+}
 //GO¡¡¡¡¡
  loadSongs()
 
